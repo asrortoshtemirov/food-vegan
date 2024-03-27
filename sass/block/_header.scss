@@ -1,0 +1,56 @@
+#main-header {
+  min-height: 10vh;
+  padding: 20px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+}
+
+.nav {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  a {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #5b5b5b;
+    transition: color 0.2s linear;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.nav-menu {
+  display: none;
+  .fa-solid {
+    font-size: 20px;
+  }
+}
+
+// responsive design
+@media screen and (max-width: 750px) {
+  #main-header {
+    padding: 10px 0px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+  }
+}
